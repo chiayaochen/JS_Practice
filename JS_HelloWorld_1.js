@@ -42,7 +42,7 @@ while((funds > 1)&&(funds < 100)){
     funds -= betMoney; // 從資金裡扣掉賭金
     let faceList = Object.keys(betStatus); // 取得物件的key排成陣列
     let faceStatus = faceList.map(item => `${item}的賭金為${betStatus[item]}元`);// 按照陣列裡的東西對應到相對的字串
-    let message = '\t本次賭注:' + faceStatus.join(', ') + `賭金共${betMoney}}元`
+    let message = `	本次賭注:${faceStatus.join(', ')}${`賭金共${betMoney}}元`}`
     console.log(message)
 
     //擲骰子
